@@ -12,8 +12,14 @@
    - Difficulty: *Easy*
    - Approach: Keep two counters equal to zero and iterate through the array. if one is encountered then increase counter1, else set counter1 to zero. Before the end of each loop set counter2 as the maximum of both the counters.
 
-   #### [LeetCode 73 - Set Matrix Zeroes]([https://leetcode.com/problems/max-consecutive-ones/](https://leetcode.com/problems/set-matrix-zeroes/)) ####
+   #### [LeetCode 73 - Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) ####
    Question: Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
    - Topic: *Array*
    - Difficulty: *Medium*
    - Approach: Initialise a column0 variable to 1. Iterate through the matrix, if element is zero then mark the 0th index of the row as zero and mark the column as zero if the column in not zero else mark the variable column0 as 0. Exit the loop. Run through the matrix again and changed the marked column and row to zero, except the 0th column and row. Exit the loop. Next, if the (0,0) index is zero then mark 0th row to zero. Similarly, if the variable column0 is zero, then mark the 0th column as zero.
+
+#### [LeetCode 35 - Search Insert Position](https://leetcode.com/problems/search-insert-position/) ####
+   Question: Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+   - Topic: *Binary Search*
+   - Difficulty: *Easy*
+   - Approach: Initialise a start, end and a result variable and iterate through the start to end of the array according to the binary search algorithm and search for the different element index and if the element is not found chexk if the element is greater or lesser than the element and change the start and end variable values accordingly while also searching for the position; also update the ressult variable to the mid element.
