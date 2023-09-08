@@ -24,3 +24,10 @@
    - Topic: *Binary Search*
    - Difficulty: *Easy*
    - Approach: Initialise a start, end and a result variable and iterate through the start to end of the array according to the binary search algorithm and search for the different element index and if the element is not found chexk if the element is greater or lesser than the element and change the start and end variable values accordingly while also searching for the position; also update the ressult variable to the mid element.
+
+## Day 3: ##
+#### [Coding Ninjas - Implement Lower Boundd](https://www.codingninjas.com/codestudio/problems/lower-bound_8165382?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries) ####
+   Question: You are given an array 'arr' sorted in a non-decreasing order and a number 'x'. You must return the index of the lower bound.
+   - Topic: *Binary Search*
+   - Difficulty: *Easy*
+   - Approach: Start by writing the binary search code. Next, instead of seraching for the element in the loop, seach for a number greater then the target value. If found replace the result variable with the index of this variable and the lower to the mid-1 value; else change low to mid+1.
