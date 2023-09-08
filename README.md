@@ -26,14 +26,20 @@
    - Approach: Initialise a start, end and a result variable and iterate through the start to end of the array according to the binary search algorithm and search for the different element index and if the element is not found chexk if the element is greater or lesser than the element and change the start and end variable values accordingly while also searching for the position; also update the ressult variable to the mid element.
 
 ## Day 3: ##
-#### [Coding Ninjas - Implement Lower Boundd](https://www.codingninjas.com/codestudio/problems/lower-bound_8165382?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries) ####
+#### [Coding Ninjas - Implement Lower Bound](https://www.codingninjas.com/codestudio/problems/lower-bound_8165382?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries) ####
    Question: You are given an array 'arr' sorted in a non-decreasing order and a number 'x'. You must return the index of the lower bound.
    - Topic: *Binary Search*
    - Difficulty: *Easy*
    - Approach: Start by writing the binary search code. Next, instead of seraching for the element in the loop, seach for a number greater than or equal to the target value. If found replace the result variable with the index of this element and the low variable to the mid-1 value; else change low to mid+1.
 
-#### [Coding Ninjas - Implement Upper Boundd](https://www.codingninjas.com/codestudio/problems/implement-upper-bound_8165383?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries) ####
+#### [Coding Ninjas - Implement Upper Bound](https://www.codingninjas.com/codestudio/problems/implement-upper-bound_8165383?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries) ####
    Question: You are given an array 'arr' sorted in a non-decreasing order and a number 'x'. You must return the index of the upper bound.
    - Topic: *Binary Search*
    - Difficulty: *Easy*
    - Approach: Start by writing the binary search code. Next, instead of seraching for the element in the loop, seach for a number greater than the target value. If found replace the result variable with the index of this element and the high variable to the mid-1 value; else change low to mid+1.
+
+#### [Coding Ninjas - Ceil the Floor]() ####
+   Question: You’re given an sorted array arr of n integers and an integer x. Find the floor and ceiling of x in arr\[0..n-1]. The floor of x is the largest element in the array which is smaller than or equal to x. The ceiling of x is the smallest element in the array greater than or equal to x.
+   - Topic: *Binary Search*
+   - Difficulty: *Medium*
+   - Approach: Start by sorting the array for Binary Search. Next, call the functions for lower bound and upper bound for ceil and floor respectively. Return by making a pair of the floor and ceil values with the help of the function 'make_pair(int, int);'.
