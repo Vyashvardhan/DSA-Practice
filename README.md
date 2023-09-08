@@ -30,4 +30,10 @@
    Question: You are given an array 'arr' sorted in a non-decreasing order and a number 'x'. You must return the index of the lower bound.
    - Topic: *Binary Search*
    - Difficulty: *Easy*
-   - Approach: Start by writing the binary search code. Next, instead of seraching for the element in the loop, seach for a number greater then the target value. If found replace the result variable with the index of this variable and the lower to the mid-1 value; else change low to mid+1.
+   - Approach: Start by writing the binary search code. Next, instead of seraching for the element in the loop, seach for a number greater than or equal to the target value. If found replace the result variable with the index of this element and the low variable to the mid-1 value; else change low to mid+1.
+
+#### [Coding Ninjas - Implement Upper Boundd](https://www.codingninjas.com/codestudio/problems/implement-upper-bound_8165383?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries) ####
+   Question: You are given an array 'arr' sorted in a non-decreasing order and a number 'x'. You must return the index of the upper bound.
+   - Topic: *Binary Search*
+   - Difficulty: *Easy*
+   - Approach: Start by writing the binary search code. Next, instead of seraching for the element in the loop, seach for a number greater than the target value. If found replace the result variable with the index of this element and the high variable to the mid-1 value; else change low to mid+1.
