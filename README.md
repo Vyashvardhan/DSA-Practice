@@ -38,7 +38,7 @@
    - Difficulty: *Easy*
    - Approach: Start by writing the binary search code. Next, instead of seraching for the element in the loop, seach for a number greater than the target value. If found replace the result variable with the index of this element and the high variable to the mid-1 value; else change low to mid+1.
 
-#### [Coding Ninjas - Ceil the Floor]() ####
+#### [Coding Ninjas - Ceil the Floor](https://www.codingninjas.com/studio/problems/ceiling-in-a-sorted-array_1825401) ####
    Question: You’re given an sorted array arr of n integers and an integer x. Find the floor and ceiling of x in arr\[0..n-1]. The floor of x is the largest element in the array which is smaller than or equal to x. The ceiling of x is the smallest element in the array greater than or equal to x.
    - Topic: *Binary Search*
    - Difficulty: *Medium*
@@ -50,3 +50,9 @@
   - Topic: *Binary Search*
   - Difficulty: *Medium*
   - Approach: Write two functions. One for the left bound(lower bound) in which when target is found the index is stored in a variable and then the value is of high becomes mid-1 and then returns the value of the lowest index and if index not found returns -1. Similarly, the other function is right bound(upper bound) but here instead of high changing the low changes to mid+1 to keep searching for the upper bound.
+
+#### [Coding Ninjas - Number of Occurence](https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_630456) ####
+   Question: You’re given an sorted array arr of n integers and an integer x. Find the number of occurences of x in the array.
+   - Topic: *Binary Search*
+   - Difficulty: *Medium*
+   - Approach: Write the same solution as the previous question., that is the same code for the prev. question and then calculate the total occurence by the formula, 'first - last + 1' and return the count.
