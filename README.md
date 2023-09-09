@@ -43,3 +43,10 @@
    - Topic: *Binary Search*
    - Difficulty: *Medium*
    - Approach: Start by sorting the array for Binary Search. Next, call the functions for lower bound and upper bound for ceil and floor respectively. Return by making a pair of the floor and ceil values with the help of the function 'make_pair(int, int);'.
+
+## Day 4: ##
+  #### [Leetcode 34 - Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) ####
+  Question: Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found in the array, return {-1, -1}.
+  - Topic: *Binary Search*
+  - Difficulty: *Medium*
+  - Approach: Write two functions. One for the left bound(lower bound) in which when target is found the index is stored in a variable and then the value is of high becomes mid-1 and then returns the value of the lowest index and if index not found returns -1. Similarly, the other function is right bound(upper bound) but here instead of high changing the low changes to mid+1 to keep searching for the upper bound.
