@@ -63,3 +63,9 @@
   - Topic: *Binary Search*
   - Difficulty: *Medium*
   - Approach: Perform a normal binary search for the element, but while searching for the element, locate the sorted half, as atleast one half has to be sorted. Check if target is in the range of the sorted half, if not eleminate the sorted half and change the values of high and low respectively.
+
+#### [Leetcode 81 - Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) ####
+  Question: There is an integer array nums sorted in non-decreasing order (not necessarily with distinct values). Before being passed to your function, nums is rotated at an unknown pivot index k (0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,4,4,5,6,6,7] might be rotated at pivot index 5 and become [4,5,6,6,7,0,1,2,4,4]. Given the array nums after the rotation and an integer target, return true if target is in nums, or false if it is not in nums.
+  - Topic: *Binary Search*
+  - Difficulty: *Medium*
+  - Approach: Perform a normal binary search for the element, but while searching for the element, check if the elements at mid high and low all three are equl if they are then reduce the array by eliminatnig the high and the low elements then continue to locate the sorted half, as atleast one half has to be sorted. Check if target is in the range of the sorted half, if not eleminate the sorted half and change the values of high and low respectively.
