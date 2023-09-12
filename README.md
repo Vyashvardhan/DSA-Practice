@@ -69,3 +69,10 @@
   - Topic: *Binary Search*
   - Difficulty: *Medium*
   - Approach: Perform a normal binary search for the element, but while searching for the element, check if the elements at mid high and low all three are equl if they are then reduce the array by eliminatnig the high and the low elements then continue to locate the sorted half, as atleast one half has to be sorted. Check if target is in the range of the sorted half, if not eleminate the sorted half and change the values of high and low respectively.
+
+## Day 6: ##
+  #### [Leetcode 153 - Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) ####
+  Question: Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2] if it was rotated 4 times. [0,1,2,4,5,6,7] if it was rotated 7 times. Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]]. Given the sorted rotated array nums of unique elements, return the minimum element of this array.
+  - Topic: *Binary Search*
+  - Difficulty: *Medium*
+  - Approach: In a normal binary search, initialise a ans variable with 'INT_MAX'. In the while loop, check if element at low is less or equal to the element at high, if true then replaec ans with the minimum of low and ans. then check if low less than equal to mid, if true ans is the minimum between the mid and the low and low is mid+1 as the sorted half is now element. Now for the else case, decrease the high to mid-1 and ans is the minimum between the mid and ans.
