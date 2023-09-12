@@ -76,3 +76,9 @@
   - Topic: *Binary Search*
   - Difficulty: *Medium*
   - Approach: In a normal binary search, initialise a ans variable with 'INT_MAX'. In the while loop, check if element at low is less or equal to the element at high, if true then replaec ans with the minimum of low and ans. then check if low less than equal to mid, if true ans is the minimum between the mid and the low and low is mid+1 as the sorted half is now element. Now for the else case, decrease the high to mid-1 and ans is the minimum between the mid and ans.
+
+#### [Coding Ninjas - Find out how many times the array has been rotated](https://www.codingninjas.com/studio/problems/rotation_7449070) ####
+   Question: Given an integer array arr of size N, sorted in ascending order (with distinct values). Now the array is rotated between 1 to N times which is unknown. Find how many times the array has been rotated.
+   - Topic: *Binary Search*
+   - Difficulty: *Easy*
+   - Approach: Look for the minimum number in the array and return its index.
