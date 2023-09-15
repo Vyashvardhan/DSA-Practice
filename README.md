@@ -84,8 +84,15 @@
    - Approach: Look for the minimum number in the array and return its index.
 
 ## Day 7: ##
-  #### [Leetcode 540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/) ####
+  #### [Leetcode 540 - Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/) ####
   Question: You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once. Return the single element that appears only once.
   - Topic: *Binary Search*
   - Difficulty: *Medium*
   - Approach: In a normal binary search, first return the edge cases that are if size is 1 and start or last element is a single element. Next perform the binary search and check if the left of the element or the right of the element is same while also checking if the index of the element is even or odd. If (index is odd and element equivalent is on the left OR index is even and elements equivalentt is on the right) then we are at left and then eliminate the left; else eliminate the right. At the end return a dummy statement.
+
+## Day 8: ##
+  #### [Leetcode 162 - Find Peak Element](https://leetcode.com/problems/find-peak-element/) ####
+  Question: A peak element is an element that is strictly greater than its neighbors. Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks. You may imagine that nums(-1) = nums(n) = -∞. In other words, an element is always considered to be strictly greater than a neighbor that is outside the array.
+  - Topic: *Binary Search*
+  - Difficulty: *Medium*
+  - Approach: In a normal binary search, first return the edge cases that are if size is 1 and start or last element is peak element, then return their index. Next, perform the binary search and check if the middle element is the peak, if it is then return else check if left of the element or the right of the element is greater and then eleminate the greater side. Then increase the low and high as per the needs accordingly. At the end return a dummy statement.
