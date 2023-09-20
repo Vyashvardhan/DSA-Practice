@@ -97,9 +97,15 @@
   - Difficulty: *Medium*
   - Approach: In a normal binary search, first return the edge cases that are if size is 1 and start or last element is peak element, then return their index. Next, perform the binary search and check if the middle element is the peak, if it is then return else check if left of the element or the right of the element is greater and then eleminate the greater side. Then increase the low and high as per the needs accordingly. At the end return a dummy statement.
 
-## Day 8: ##
+## Day 9: ##
   #### [Coding Ninjas - Square Root of a Number](https://www.codingninjas.com/studio/problems/square-root-integral_893351?leftPanelTab=0) ####
   Question: You are given a positive integer n. Your task is to find and return its square root. If ‘n’ is not a perfect square, then return the floor value of ‘sqrt(n)’.
   - Topic: *Binary Search*
   - Difficulty: *Easy*
-  - Approach: In a normal binary search, check if the mid^2 is less than equal to 'n'; if true return the left half is eliminated as the maximum has been found., Similarly if false eliminate the right half as then the square will become greater than 'n'. Return high.
+  - Approach: In a normal binary search, check if the mid^2 is less than equal to 'n'; if true then the left half is eliminated as the maximum has been found., Similarly if false eliminate the right half as then the square will become greater than 'n'. Return high.
+
+  #### [Coding Ninjas - Find Nth Root of M](https://www.codingninjas.com/studio/problems/nth-root-of-m_1062679?leftPanelTab=0) ####
+  Question: Given two numbers N and M, find the Nth root of M. The nth root of a number M is defined as a number X when raised to the power N equals M. If the ‘nth root is not an integer, return -1.
+  - Topic: *Binary Search*
+  - Difficulty: *Easy*
+  - Approach: In a normal binary search, check if the mid^n is equal to 'm'; if true return mid., else if less than 'm' the left half is eliminated., Similarly if greater eliminate the right half as then the square will become greater than 'm'. Return -1 as exact root not found.
