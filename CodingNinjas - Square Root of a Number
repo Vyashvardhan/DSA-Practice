@@ -1,0 +1,13 @@
+int floorSqrt(int n)
+{
+    int high = n-1, low = 0;
+    while(low<=high) {
+        int mid = (low+high)/2;
+        if((mid*mid)<=n) {
+            low = mid+1;
+        } else {
+            high = mid-1;
+        }
+    }
+    return high;
+}
